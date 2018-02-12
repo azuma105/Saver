@@ -1,6 +1,8 @@
 Binaries/
+DerivedDataCache/
 Intermediate/
 Saved/
 .vs/
 Saver.sdf
+Saver.sln
 Saver.opensdf
