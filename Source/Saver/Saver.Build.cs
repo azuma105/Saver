@@ -4,7 +4,7 @@ using UnrealBuildTool;
 
 public class Saver : ModuleRules
 {
-	public Saver(TargetInfo Target)
+	public Saver(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay" });
 	}
