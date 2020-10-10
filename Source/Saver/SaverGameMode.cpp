@@ -2,7 +2,8 @@
 
 #include "Saver.h"
 #include "SaverGameMode.h"
-#include "SaverCharacter.h"
+#include "Character/SaverCharacter.h"
+#include "Controller/SaverPlayerController.h"
 
 ASaverGameMode::ASaverGameMode()
 {
@@ -12,4 +13,6 @@ ASaverGameMode::ASaverGameMode()
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
+
+	PlayerControllerClass = ASaverPlayerController::StaticClass();
 }
